@@ -1,0 +1,50 @@
+﻿@model WebMvcControlerAcesso.Models.TB_ALUNO
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TB_ALUNO</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NOME)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOME)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RM)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RM)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DATA_NASCIENTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DATA_NASCIENTO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SEXO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SEXO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.COD_ALUNO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
