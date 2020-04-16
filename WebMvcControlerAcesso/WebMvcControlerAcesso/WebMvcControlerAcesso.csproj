@@ -150,6 +150,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\MatriculaAluno.cs" />
     <Compile Include="Models\ModelAcessoAluno.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -251,7 +252,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\AreaAdministrativa.cshtml" />
-    <Content Include="Views\Home\RM.cshtml" />
     <Content Include="Views\Usuario\Create.cshtml" />
     <Content Include="Views\Usuario\Delete.cshtml" />
     <Content Include="Views\Usuario\Details.cshtml" />
@@ -263,6 +263,7 @@
     <Content Include="Views\Aluno\Edit.cshtml" />
     <Content Include="Views\Aluno\Index.cshtml" />
     <Content Include="Views\Relatorio\RelatorioAlunos.cshtml" />
+    <Content Include="Views\Aluno\RM.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -20,6 +20,39 @@ namespace WebMvcControlerAcesso.Controllers
             return View(db.TB_ALUNO.ToList());
         }
 
+        [HttpPost]
+        public ActionResult Index(MatriculaAluno matricula)
+        {
+            int turmaId = matricula.COD_TURMA;
+            string name = matricula.NOME;
+            DateTime nascimento = matricula.DATA_NASCIMENTO;
+            int rm = matricula.RM;
+            return View(matricula);
+
+            //aí cria o aluno, recuperta turma e associa os dois
+          
+        }
+
+        // view responsável por trazer a mensagem de bem vindo mais o nome do aluno (quando o aluno digitar o RM)
+        public ActionResult RM(string rm)
+        {
+            if (rm == null)
+
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            TB_ALUNO tB_ALUNO = db.TB_ALUNO.Where(a => a.RM == rm).SingleOrDefault();
+
+            if (tB_ALUNO == null)
+
+            {
+                return HttpNotFound();
+            }
+            return View(tB_ALUNO);
+        }
+
+
         // GET: Aluno/Details/5
         public ActionResult Details(int? id)
         {

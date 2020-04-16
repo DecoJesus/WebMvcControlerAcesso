@@ -23,11 +23,8 @@ namespace WebMvcControlerAcesso.Controllers
 
         }
 
-        public ActionResult RM()
-        {
-            return View ();
-
-        }
+       
+        
 
 
 
