@@ -19,7 +19,7 @@ namespace WebMvcControlerAcesso.Models
         public string ANO { get; set; }
         public string SEMESTRE { get; set; }
     
-        public virtual TB_ALUNO TB_ALUNO { get; set; }
         public virtual TB_TURMA TB_TURMA { get; set; }
+        public virtual TB_ALUNO TB_ALUNO { get; set; }
     }
 }

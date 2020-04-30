@@ -25,7 +25,7 @@ namespace WebMvcControlerAcesso.Models
         public int COD_ALUNO { get; set; }
         public string NOME { get; set; }
         public string RM { get; set; }
-        public System.DateTime DATA_NASCIENTO { get; set; }
+        public System.DateTime DATA_NASCIMENTO { get; set; }
         public string SEXO { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

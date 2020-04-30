@@ -11,6 +11,22 @@ namespace WebMvcControlerAcesso
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(     //Url pra chamar a a view RM
+                name: "BuscarRM",
+                url: "Aluno/IndexRM/{rm}",
+                defaults: new
+                {
+                    controller = "Aluno",
+                    action = "RM"
+                }
+
+
+            );
+
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(

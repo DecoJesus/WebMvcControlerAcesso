@@ -23,7 +23,7 @@
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Início", "Index", "Home")</li>
                     <li>@Html.ActionLink("Area Administrativa", "AreaAdministrativa", "Home")</li>
-                    <li>@Html.ActionLink("Acesso via RM", "RM", "Home")</li>
+                    <li>@Html.ActionLink("Acesso via RM", "IndexRM", "Aluno")</li>
                     <li>@Html.ActionLink("Login", "Login", "Home")</li>
                     <li>@Html.ActionLink("Cadastro de Usuario", "Create", "Usuario")</li>
                     <li>@Html.ActionLink("Cadastro de Aluno", "Create", "Aluno")</li>
@@ -35,7 +35,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Controle de Acesso</p>
+            <p>&copy; @DateTime.Now.Year  Controle de Acesso</p>
         </footer>
     </div>
 

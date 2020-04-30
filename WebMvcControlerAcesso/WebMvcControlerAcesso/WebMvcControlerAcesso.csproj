@@ -146,6 +146,7 @@
     <Compile Include="Controllers\AlunoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RelatorioController.cs" />
+    <Compile Include="Controllers\TurmaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -263,7 +264,12 @@
     <Content Include="Views\Aluno\Edit.cshtml" />
     <Content Include="Views\Aluno\Index.cshtml" />
     <Content Include="Views\Relatorio\RelatorioAlunos.cshtml" />
-    <Content Include="Views\Aluno\RM.cshtml" />
+    <Content Include="Views\Aluno\IndexRM.cshtml" />
+    <Content Include="Views\Turma\Create.cshtml" />
+    <Content Include="Views\Turma\Delete.cshtml" />
+    <Content Include="Views\Turma\Details.cshtml" />
+    <Content Include="Views\Turma\Edit.cshtml" />
+    <Content Include="Views\Turma\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,11 +1,12 @@
 ﻿
 @{
-    ViewBag.Title = "RM";
+    ViewBag.Title = "IndexRM";
 }
 
-<h2>RM</h2>
+<h2>IndexRM</h2>
 
-@using (Html.BeginForm("RM", "Aluno"))
+
+@using (Ajax.BeginForm("BuscaRM", "Aluno", new AjaxOptions { HttpMethod = "POST", OnSuccess = "OnSuccess" }, new { @role = "form" }))
 {
     <div class="form-horizontal">
         @Html.AntiForgeryToken()
@@ -15,7 +16,7 @@
             @Html.Label("rm", "RM", htmlAttributes: new { @class = "control-label col-md-2" })
 
             <div class="col-md-10">
-                @Html.TextBox("rm", "RM", new { @class = "form-control" })
+                @Html.TextBox("rm", "RM", new { @class = "form-control", @maxlength = "15" })
                 @Html.ValidationMessage("rm", "", new { @class = "text-danger" })
 
             </div>
@@ -31,5 +32,12 @@
         </div>
 
     </div>
+    //JS
+    <script>
+function OnSuccess(responsive) {
+     alert(responsive.nome);
 }
+    </script>
 
+
+}
