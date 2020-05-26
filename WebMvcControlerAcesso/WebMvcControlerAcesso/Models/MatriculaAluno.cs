@@ -31,7 +31,7 @@ namespace WebMvcControlerAcesso.Models
                     NOME = this.NOME,
                     RM = this.RM,
                     SEXO = this.SEXO,
-                    DATA_NASCIENTO = this.DATA_NASCIMENTO,
+                    DATA_NASCIMENTO = this.DATA_NASCIMENTO,
 
 
                 };

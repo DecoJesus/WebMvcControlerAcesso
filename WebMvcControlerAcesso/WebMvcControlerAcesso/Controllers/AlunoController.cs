@@ -117,7 +117,7 @@ namespace WebMvcControlerAcesso.Controllers
         // obter mais detalhes, consulte https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "COD_ALUNO,NOME,RM,DATA_NASCIENTO,SEXO")] TB_ALUNO tB_ALUNO)
+        public ActionResult Edit([Bind(Include = "COD_ALUNO,NOME,RM,DATA_NASCIMENTO,SEXO")] TB_ALUNO tB_ALUNO)
         {
             if (ModelState.IsValid)
             {

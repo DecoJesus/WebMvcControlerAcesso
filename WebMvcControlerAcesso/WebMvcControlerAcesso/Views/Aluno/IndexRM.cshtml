@@ -6,7 +6,7 @@
 <h2>IndexRM</h2>
 
 
-@using (Ajax.BeginForm("BuscaRM", "Aluno", new AjaxOptions { HttpMethod = "POST", OnSuccess = "OnSuccess" }, new { @role = "form" }))
+@using (Ajax.BeginForm("BuscarRM", "Aluno", new AjaxOptions { HttpMethod = "POST", OnSuccess = "OnSuccess" }, new { @role = "form" }))
 {
     <div class="form-horizontal">
         @Html.AntiForgeryToken()

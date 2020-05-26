@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="COD_ACESSO" />
     </Key>
-    <Property Name="COD_ACESSO" Type="int" Nullable="false" />
+    <Property Name="COD_ACESSO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="DATA" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="HORA_ENTRADA" Type="time" Precision="7" Nullable="false" />
     <Property Name="HORA_SAIDA" Type="time" Precision="7" Nullable="false" />
@@ -14,10 +14,10 @@
     <Key>
       <PropertyRef Name="COD_ALUNO" />
     </Key>
-    <Property Name="COD_ALUNO" Type="int" Nullable="false" />
+    <Property Name="COD_ALUNO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="NOME" Type="varchar" MaxLength="70" Nullable="false" />
     <Property Name="RM" Type="varchar" MaxLength="10" Nullable="false" />
-    <Property Name="DATA_NASCIENTO" Type="date" Nullable="false" />
+    <Property Name="DATA_NASCIMENTO" Type="date" Nullable="false" />
     <Property Name="SEXO" Type="char" MaxLength="10" Nullable="false" />
   </EntityType>
   <EntityType Name="TB_ALUNO_TURMA">
@@ -36,7 +36,7 @@
     <Key>
       <PropertyRef Name="COD_AUTORIZACAO" />
     </Key>
-    <Property Name="COD_AUTORIZACAO" Type="int" Nullable="false" />
+    <Property Name="COD_AUTORIZACAO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="NOME_RESPONSAVEL" Type="varchar" MaxLength="70" Nullable="false" />
     <Property Name="RG" Type="char" MaxLength="12" Nullable="false" />
     <Property Name="DATA" Type="date" Nullable="false" />
@@ -51,21 +51,21 @@
     <Key>
       <PropertyRef Name="COD_CARGO" />
     </Key>
-    <Property Name="COD_CARGO" Type="int" Nullable="false" />
+    <Property Name="COD_CARGO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CARGO" Type="varchar" MaxLength="60" Nullable="false" />
   </EntityType>
   <EntityType Name="TB_CURSO">
     <Key>
       <PropertyRef Name="COD_CURSO" />
     </Key>
-    <Property Name="COD_CURSO" Type="int" Nullable="false" />
+    <Property Name="COD_CURSO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="NOME_CURSO" Type="varchar" MaxLength="70" Nullable="false" />
   </EntityType>
   <EntityType Name="TB_TURMA">
     <Key>
       <PropertyRef Name="COD_TURMA" />
     </Key>
-    <Property Name="COD_TURMA" Type="int" Nullable="false" />
+    <Property Name="COD_TURMA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="SERIE" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="PERIODO" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="HORA_ENTRADA" Type="time" Precision="7" Nullable="false" />
@@ -76,7 +76,7 @@
     <Key>
       <PropertyRef Name="COD_USUARIO" />
     </Key>
-    <Property Name="COD_USUARIO" Type="int" Nullable="false" />
+    <Property Name="COD_USUARIO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="NOME" Type="varchar" MaxLength="70" Nullable="false" />
     <Property Name="SOBRENOME" Type="varchar" MaxLength="60" Nullable="false" />
     <Property Name="EMAIL" Type="varchar" MaxLength="60" Nullable="false" />
