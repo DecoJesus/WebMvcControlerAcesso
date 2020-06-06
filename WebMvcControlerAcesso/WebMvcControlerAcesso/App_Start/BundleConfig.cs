@@ -12,6 +12,7 @@ namespace WebMvcControlerAcesso
                         "~/Scripts/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+                        "~/Scripts/jquery.unobtrusive*", //usando o json do ajax esse comando foi adicionado pra formatação da tela de RM 
                         "~/Scripts/jquery.validate*"));
 
             // Use a versão em desenvolvimento do Modernizr para desenvolver e aprender. Em seguida, quando estiver

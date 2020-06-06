@@ -178,16 +178,16 @@ namespace WebMvcControlerAcesso.Controllers
             //return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             // }
 
-            var nome = db.TB_ALUNO.Where(a => a.RM == tB_ALUNO.RM).FirstOrDefault();
+            var aluno = db.TB_ALUNO.Where(a => a.RM == tB_ALUNO.RM).FirstOrDefault();
 
-            if (nome == null)
+            if (aluno == null)
 
             {
                 return HttpNotFound();
 
             }
 
-            return Json(new { nome = true }, JsonRequestBehavior.AllowGet);
+            return Json(new { nome = aluno.NOME }, JsonRequestBehavior.AllowGet);
 
 
         }

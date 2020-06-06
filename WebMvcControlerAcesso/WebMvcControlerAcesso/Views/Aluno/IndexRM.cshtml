@@ -5,8 +5,19 @@
 
 <h2>IndexRM</h2>
 
+<h3>
 
-@using (Ajax.BeginForm("BuscarRM", "Aluno", new AjaxOptions { HttpMethod = "POST", OnSuccess = "OnSuccess" }, new { @role = "form" }))
+    <span id="mensagem">
+
+        <!-- Aqui vai aparecer a mensagem que vier do server -->
+
+    </span>
+
+</h3>
+
+@using (Ajax.BeginForm("BuscarRM", "Aluno", 
+    new AjaxOptions { HttpMethod = "POST", OnSuccess = "OnSuccess" }, 
+    new { @role = "form" }))
 {
     <div class="form-horizontal">
         @Html.AntiForgeryToken()
@@ -33,11 +44,41 @@
 
     </div>
     //JS
-    <script>
-function OnSuccess(responsive) {
-     alert(responsive.nome);
-}
+
+
+
+    <!--
+        <script>
+        function OnSuccess(responsive) {
+            alert(responsive.nome);
+        }
     </script>
 
+    -->
 
 }
+
+
+<!--Esse comando e pra quando o aluno digitar o seu RM o sistema apresente a mensagem "bem vindo
+    + o nome do aluno" na mesma tela de busca do RM-->
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    <script type="text/javascript">
+        function OnSuccess(response) {
+            if (response && response.nome) { //Verifica se response e se response.nome existe
+
+                alert(response.nome);   //Esse é pra aparecer o alerta com nome do aluno assim que você digita o RM e clica em pesquisar
+
+                document.getElementById('mensagem').innerHTML = 'Bem Vindo,' + response.nome; //Apresenta a mensagem de bem vindo mias  o nome do aluno
+
+            }
+        }
+
+    </script>
+
+}
+
