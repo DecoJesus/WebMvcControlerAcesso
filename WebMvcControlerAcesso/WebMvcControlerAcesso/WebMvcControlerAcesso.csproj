@@ -133,6 +133,12 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="zxing, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net461\zxing.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.presentation, Version=0.16.5.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZXing.Net.0.16.5\lib\net461\zxing.presentation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
@@ -145,6 +151,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AlunoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\QRCodeGeradorController.cs" />
     <Compile Include="Controllers\RelatorioController.cs" />
     <Compile Include="Controllers\TurmaController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
@@ -167,6 +174,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelAcessoAluno.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\QRcodeModel.cs" />
     <Compile Include="Models\TB_ACESSO.cs">
       <DependentUpon>ModelAcessoAluno.tt</DependentUpon>
     </Compile>
@@ -272,6 +280,8 @@
     <Content Include="Views\Turma\Details.cshtml" />
     <Content Include="Views\Turma\Edit.cshtml" />
     <Content Include="Views\Turma\Index.cshtml" />
+    <Content Include="Views\QRCodeGerador\Read.cshtml" />
+    <Content Include="Views\QRCodeGerador\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

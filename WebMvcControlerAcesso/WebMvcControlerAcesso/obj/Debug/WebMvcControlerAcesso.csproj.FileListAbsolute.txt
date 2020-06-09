@@ -186,3 +186,9 @@ C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcContr
 C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\bin\pt-br\System.Web.WebPages.Razor.resources.dll
 C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\obj\Debug\WebMvcControlerAcesso.csproj.CopyComplete
+C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\bin\zxing.dll
+C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\bin\zxing.presentation.dll
+C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\bin\zxing.pdb
+C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\bin\zxing.xml
+C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\bin\zxing.presentation.pdb
+C:\Users\User\Videos\Tcc WebMvcControlerAcesso\WebMvcControlerAcesso\WebMvcControlerAcesso\bin\zxing.presentation.xml
